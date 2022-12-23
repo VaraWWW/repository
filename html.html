@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: black;
+            background-image: radial-gradient(rgba(0, 150, 20, 0.75), black 120%);
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            padding: 2rem;
+            color: white;
+            font: 1.3rem Inconsolata, monospace;
+            text-shadow: 0 0 5px #C8C8C8;
+
+            &::after {
+                content: "";
+                position: linear;
+                top: 0;
+                left: 1;
+                width: 100vw;
+                height: 100vh;
+                background: repeating-linear-gradient(0deg,
+                        rgba(black, 0.15),
+                        rgba(black, 0.15) 1px,
+                        transparent 100px,
+                        transparent 2px);
+                pointer-events: none;
+            }
+        }
+
+        ::selection {
+            background: #0080FF;
+            text-shadow: none;
+        }
+
+        pre {
+            margin: 0;
+        }
+
+
+
+        /* DEMO-SPECIFIC STYLES */
+        .typewriter p {
+            color: #fff;
+            font-family: monospace;
+            overflow: hidden;
+            /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid rgb(0, 0, 0);
+            /* The typwriter cursor */
+            white-space: nowrap;
+            /* Keeps the content on a single line */
+            margin: 3 auto;
+            /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .15em;
+            /* Adjust as needed */
+            animation:
+                typing 2s steps(60, end),
+                blink-caret .5s step-end infinite;
+        }
+
+        .typewriter2 p {
+            color: #fff;
+            font-family: monospace;
+            overflow: hidden;
+            /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid rgb(0, 0, 0);
+            /* The typwriter cursor */
+            white-space: nowrap;
+            /* Keeps the content on a single line */
+            margin: 3 auto;
+            /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .15em;
+            /* Adjust as needed */
+
+
+            animation:
+                typing 2s steps(60, end),
+                blink-caret .5s step-end infinite;
+            animation-delay: 1.5s;
+            animation-fill-mode: both;
+        }
+
+        .typewriter3 p {
+            color: #fff;
+            font-family: monospace;
+            overflow: hidden;
+            /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid rgb(0, 0, 0);
+            /* The typwriter cursor */
+            white-space: nowrap;
+            /* Keeps the content on a single line */
+            margin: 2 auto;
+            /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .15em;
+            /* Adjust as needed */
+
+
+            animation:
+                typing 2s steps(60, end),
+                blink-caret .5s step-end infinite;
+            animation-delay: 2.5s;
+            animation-fill-mode: both;
+        }
+
+        /* The typing effect */
+        @keyframes typing {
+            from {
+                width: 0%
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: transparent
+            }
+        
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+
+    <h1>SCP_SECURE.CONTAIN.PROTECT</h1>
+    <p>standard_inari_login</p>
+
+    <div class="typewriter">
+        <p> Inari: Hello, Authorised user.
+        </p>
+    </div>
+    <div class="typewriter2">
+        <p> Inari: Please select your desired file.
+        </p>
+    </div>
+<BR>
+    <div class="typewriter3">
+        <p><a href="https://docs.google.com/document/d/1AlSfKUCtWjNSWVYyRP2CqKGxkye3FhUZZ3YVy93C1V4/edit?usp=sharing">Formation Document</a></p>
+    </div>
+
+
+</body>
+
+</html>
